@@ -33,7 +33,7 @@ def read_file(filename):
             print(f"File {filename} opened for reading. Content: \n{content}")
     except FileNotFoundError:
         print(f"File {filename} not found")
-
+        
     except Exception as e:
         print("An error occured")
 
@@ -41,7 +41,7 @@ def edit_file(filename):
     try:
         with open(filename, "a") as f:
             content = input('Enter you text here: ')
-            f.write("\n"+content + "\n")
+            f.write(content + "\n")
             print(f"Content added to '{filename}' successfully.")
     except FileNotFoundError:
         print("File does not exist.")
