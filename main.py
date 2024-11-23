@@ -56,3 +56,8 @@ def main():
         print("4. READ FILE")
         print("5. EDIT FILE")
         print("6. EXIT")
+
+        choice: input("Enter your operation number here: ")
+
+        if choice == '1'
+        
